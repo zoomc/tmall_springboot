@@ -7,5 +7,5 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PropertyDAO extends JpaRepository<Property,Integer>{
-    Page<Property> findByCategoryAnd(Category category, Pageable pageable);
+    Page<Property> findByCategory(Category category, Pageable pageable);
 }
